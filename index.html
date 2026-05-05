@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Special Day ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background: #fff0f5;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s;
+  padding: 20px;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1 {
+  color: #ff4d6d;
+  font-size: 40px;
+}
+
+p {
+  max-width: 600px;
+  font-size: 18px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 10px;
+}
+
+nav a {
+  margin: 8px;
+  text-decoration: none;
+  color: #ff4d6d;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff4d6d;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#s1">Start</a>
+  <a href="#s5">Middle</a>
+  <a href="#s10">End</a>
+</nav>
+
+<section id="s1">
+  <h1>Our Special Day ❤️</h1>
+  <p>Me & Ahmad... a day I will never forget</p>
+  <a href="#s2" class="btn">Start Journey 💖</a>
+</section>
+
+<section id="s2">
+  <h1>The Drive 🚗</h1>
+  <p>We started our day with a beautiful drive together...</p>
+</section>
+
+<section id="s3">
+  <h1>Restaurant 🍽️</h1>
+  <p>We reached our favorite place and smiled at each other...</p>
+</section>
+
+<section id="s4">
+  <h1>Our Meal 🍝</h1>
+  <p>Sharing food, laughing, and stealing bites from each other...</p>
+</section>
+
+<section id="s5">
+  <h1>Movie Time 🎬</h1>
+  <p>Watching a movie together, but honestly... I was just watching you ❤️</p>
+</section>
+
+<section id="s6">
+  <h1>Holding Hands 🤝</h1>
+  <p>Walking slowly, holding hands, feeling safe and happy...</p>
+</section>
+
+<section id="s7">
+  <h1>Long Drive 🌙</h1>
+  <p>The night, the road, and just us together...</p>
+</section>
+
+<section id="s8">
+  <h1>Sea View 🌊</h1>
+  <p>The waves, the breeze, and your presence made it perfect...</p>
+</section>
+
+<section id="s9">
+  <h1>Music 🎶</h1>
+  <p>Listening to our favorite songs, lost in the moment...</p>
+</section>
+
+<section id="s10">
+  <h1>Forever With You 💍</h1>
+  <p>This was just one day... but I want a lifetime with you ❤️</p>
+</section>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      sec.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
