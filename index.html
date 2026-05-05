@@ -2,27 +2,26 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Our Special Day ❤️</title>
+<title>Our Love Story ❤️</title>
 
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
+  font-family: Arial;
   background: #fff0f5;
+  overflow-x: hidden;
 }
 
 section {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-align: center;
   opacity: 0;
   transform: translateY(50px);
   transition: 1s;
-  padding: 20px;
 }
 
 section.show {
@@ -32,97 +31,126 @@ section.show {
 
 h1 {
   color: #ff4d6d;
-  font-size: 40px;
 }
 
 p {
-  max-width: 600px;
-  font-size: 18px;
+  width: 70%;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: white;
-  padding: 10px;
+/* IMAGE FRAME */
+.frame {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-nav a {
-  margin: 8px;
-  text-decoration: none;
-  color: #ff4d6d;
-  font-weight: bold;
+/* BIG IMAGE SPLIT */
+.frame img {
+  width: 1000px; /* big size of collage */
+  animation: float 3s ease-in-out infinite;
 }
 
-.btn {
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* BUTTON */
+.next-btn {
   margin-top: 20px;
   padding: 10px 20px;
   background: #ff4d6d;
   color: white;
-  border-radius: 20px;
   text-decoration: none;
+  border-radius: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="#s1">Start</a>
-  <a href="#s5">Middle</a>
-  <a href="#s10">End</a>
-</nav>
-
-<section id="s1">
-  <h1>Our Special Day ❤️</h1>
-  <p>Me & Ahmad... a day I will never forget</p>
-  <a href="#s2" class="btn">Start Journey 💖</a>
+<!-- 1 DRIVE -->
+<section>
+<h1>The Drive 🚗</h1>
+<p>Our beautiful day started with a drive...</p>
+<div class="frame"><img src="story.png" style="transform: translate(0px,0px);"></div>
+<a href="#s2" class="next-btn">Next ➡️</a>
 </section>
 
+<!-- 2 -->
 <section id="s2">
-  <h1>The Drive 🚗</h1>
-  <p>We started our day with a beautiful drive together...</p>
+<h1>Restaurant 🍽️</h1>
+<p>We reached a lovely place...</p>
+<div class="frame"><img src="story.png" style="transform: translate(-300px,0px);"></div>
+<a href="#s3" class="next-btn">Next ➡️</a>
 </section>
 
+<!-- 3 -->
 <section id="s3">
-  <h1>Restaurant 🍽️</h1>
-  <p>We reached our favorite place and smiled at each other...</p>
+<h1>Meal 🍝</h1>
+<p>Sharing food and smiles...</p>
+<div class="frame"><img src="story.png" style="transform: translate(-600px,0px);"></div>
+<a href="#s4" class="next-btn">Next ➡️</a>
 </section>
 
+<!-- 4 -->
 <section id="s4">
-  <h1>Our Meal 🍝</h1>
-  <p>Sharing food, laughing, and stealing bites from each other...</p>
+<h1>Movie 🎬</h1>
+<p>Watching you more than the movie...</p>
+<div class="frame"><img src="story.png" style="transform: translate(-900px,0px);"></div>
+<a href="#s5" class="next-btn">Next ➡️</a>
 </section>
 
+<!-- 5 -->
 <section id="s5">
-  <h1>Movie Time 🎬</h1>
-  <p>Watching a movie together, but honestly... I was just watching you ❤️</p>
+<h1>Holding Hands 🤝</h1>
+<p>Walking together...</p>
+<div class="frame"><img src="story.png" style="transform: translate(0px,-400px);"></div>
+<a href="#s6" class="next-btn">Next ➡️</a>
 </section>
 
+<!-- 6 -->
 <section id="s6">
-  <h1>Holding Hands 🤝</h1>
-  <p>Walking slowly, holding hands, feeling safe and happy...</p>
+<h1>Long Drive 🌙</h1>
+<p>The night and the road...</p>
+<div class="frame"><img src="story.png" style="transform: translate(-300px,-400px);"></div>
+<a href="#s7" class="next-btn">Next ➡️</a>
 </section>
 
+<!-- 7 -->
 <section id="s7">
-  <h1>Long Drive 🌙</h1>
-  <p>The night, the road, and just us together...</p>
+<h1>Sea View 🌊</h1>
+<p>The waves and breeze...</p>
+<div class="frame"><img src="story.png" style="transform: translate(-600px,-400px);"></div>
+<a href="#s8" class="next-btn">Next ➡️</a>
 </section>
 
+<!-- 8 -->
 <section id="s8">
-  <h1>Sea View 🌊</h1>
-  <p>The waves, the breeze, and your presence made it perfect...</p>
+<h1>Music 🎶</h1>
+<p>Listening together...</p>
+<div class="frame"><img src="story.png" style="transform: translate(-900px,-400px);"></div>
+<a href="#s9" class="next-btn">Next ➡️</a>
 </section>
 
+<!-- 9 -->
 <section id="s9">
-  <h1>Music 🎶</h1>
-  <p>Listening to our favorite songs, lost in the moment...</p>
+<h1>Memories ❤️</h1>
+<p>Every moment matters...</p>
+<div class="frame"><img src="story.png" style="transform: translate(-1200px,-400px);"></div>
+<a href="#s10" class="next-btn">Next ➡️</a>
 </section>
 
+<!-- 10 -->
 <section id="s10">
-  <h1>Forever With You 💍</h1>
-  <p>This was just one day... but I want a lifetime with you ❤️</p>
+<h1>Forever 💍</h1>
+<p>I want a lifetime with you ❤️</p>
+<div class="frame"><img src="story.png" style="transform: translate(-1500px,-400px);"></div>
 </section>
 
 <script>
